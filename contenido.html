@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalles de Cómo me enamoré de ti</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hearts">
+            <div class="heart" style="left: 10%; animation-duration: 10s;"></div>
+            <div class="heart" style="left: 20%; animation-duration: 12s;"></div>
+            <div class="heart" style="left: 30%; animation-duration: 8s;"></div>
+            <div class="heart" style="left: 40%; animation-duration: 11s;"></div>
+            <div class="heart" style="left: 50%; animation-duration: 9s;"></div>
+            <div class="heart" style="left: 60%; animation-duration: 13s;"></div>
+            <div class="heart" style="left: 70%; animation-duration: 10s;"></div>
+            <div class="heart" style="left: 80%; animation-duration: 14s;"></div>
+            <div class="heart" style="left: 90%; animation-duration: 12s;"></div>
+        </div>
+        <div class="container text-center position-relative">
+            <h1>Cómo me enamoré de ti</h1>
+            <audio id="background-music" controls style="display: none;">
+                <source src="musica/Jaze - Pinta Noma - [letra] Video lyrics.mp3" type="audio/mpeg">
+                Tu navegador no soporta el elemento de audio.
+            </audio>
+            <!-- Botón para reproducir música -->
+            <button id="play-music" class="btn btn-light btn-lg mt-4">Escuchar música</button>
+        </div>
+        <!-- Back Button -->
+        <div id="backBtnContainer" class="container mt-4 text-center">
+            <a id="backBtn" class="btn btn-light btn-lg mt-4" href="index.html">Regresar</a>
+        </div>
+    </section>
+    <!-- Content Sections using Cards -->
+    <div class="container content-section">
+        <div class="row">
+            <!-- El Encuentro -->
+<div class="col-md-6 mb-4">
+    <div class="card shadow-sm">
+        <div class="card-body">
+            <h5 class="card-title">
+                <span class="circle-number">1</span> El Encuentro
+            </h5>
+            <button class="btn btn-outline-primary" onclick="toggleContent('content1')">Leer más</button>
+            <p id="content1" class="card-text hidden-content mt-3">Todo comenzó una noche cualquiera, una de esas donde uno sale con amigos a tomar unos tragos y a hablar de la vida. El destino quiso que esa noche, mi amigo necesitara comprar un vino para su novia. Decidimos acompañarlo a dejar el vino, y fue en ese momento, cuando vi a la chica que estaba con la novia de mi amigo, que algo en mí cambió. Esa chica eras tú, Zahori. Aunque en ese instante no lo supe, ese fue el inicio de algo increíble.</p>
+        </div>
+    </div>
+</div>
+
+<!-- El Primer Contacto -->
+<div class="col-md-6 mb-4">
+    <div class="card shadow-sm">
+        <div class="card-body">
+            <h5 class="card-title">
+                <span class="circle-number">2</span> El Primer Contacto
+            </h5>
+            <button class="btn btn-outline-primary" onclick="toggleContent('content2')">Leer más</button>
+            <p id="content2" class="card-text hidden-content mt-3">Esa noche, no pude dejar de pensar en ti. A las cinco de la mañana, con la valentía que solo una noche larga puede dar, decidí escribirte. Había pedido tu número a mi amigo y, sin pensarlo demasiado, te saludé. Y me respondiste, desde ese momento todo comenzó a fluir de una manera natural, como si nuestras almas ya se conocieran.</p>
+        </div>
+    </div>
+</div>
+
+<!-- La Conexión -->
+<div class="col-md-6 mb-4">
+    <div class="card shadow-sm">
+        <div class="card-body">
+            <h5 class="card-title">
+                <span class="circle-number">3</span> La Conexión
+            </h5>
+            <button class="btn btn-outline-primary" onclick="toggleContent('content3')">Leer más</button>
+            <p id="content3" class="card-text hidden-content mt-3">Recuerdo salir de la universidad y no poder esperar para escribirte de nuevo. Poco después, fui a verte a tu casa. Compartimos tragos, risas y, sin darnos cuenta, nos quedamos dormidos juntos y al día siguiente, compartimos un encebollado que, aunque sencillo, me supo diferente. Fue en ese momento cuando supe que me gustabas más de lo que podía admitir. La conexión que sentí contigo era algo especial, como si hubiera encontrado a alguien con quien podía ser yo mismo.</p>
+        </div>
+    </div>
+</div>
+
+<!-- El Enamoramiento -->
+<div class="col-md-6 mb-4">
+    <div class="card shadow-sm">
+        <div class="card-body">
+            <h5 class="card-title">
+                <span class="circle-number">4</span> El Enamoramiento
+            </h5>
+            <button class="btn btn-outline-primary" onclick="toggleContent('content4')">Leer más</button>
+            <p id="content4" class="card-text hidden-content mt-3">Con el tiempo, esa atracción inicial se convirtió en algo mucho más profundo. Descubrí que eres una chica extraordinaria, bella no solo por fuera, sino también por dentro. Me enamoré de tu manera de ser, de cómo te preocupas por los demás, de tu bondad y tu alegría. Tus pequeños gestos, como apoyarme durante mi tesis o mostrarme tu cariño de maneras sutiles, me hicieron darme cuenta de que te quiero más de lo que las palabras pueden expresar.</p>
+        </div>
+    </div>
+</div>
+
+<!-- El Deseo -->
+<div class="col-md-6 mb-4">
+    <div class="card shadow-sm">
+        <div class="card-body">
+            <h5 class="card-title">
+                <span class="circle-number">5</span> El Deseo
+            </h5>
+            <button class="btn btn-outline-primary" onclick="toggleContent('content5')">Leer más</button>
+            <p id="content5" class="card-text hidden-content mt-3">Mi amor y como olvidar cada vez que hacemos el amor, siento que me transportas a otro mundo. No puedo quitarme de la cabeza la manera en que me haces sentir, es como si tu cuerpo y el mío estuvieran hechos para encajar a la perfección. Esa silueta tuya, tan perfecta, tan irresistible... me vuelve loco. Me encanta cómo me miras, cómo me tocas, cómo me haces perder el control. Eres pura adicción, y no quiero dejar de sentir este deseo que arde en mí por ti.</p>
+        </div>
+    </div>
+</div>
+
+<!-- El Agradecimiento -->
+<div class="col-md-6 mb-4">
+    <div class="card shadow-sm">
+        <div class="card-body">
+            <h5 class="card-title">
+                <span class="circle-number">6</span> El Agradecimiento
+            </h5>
+            <button class="btn btn-outline-primary" onclick="toggleContent('content6')">Leer más</button>
+            <p id="content6" class="card-text hidden-content mt-3">Zahori, eres especial para mí. Mi vida es mejor desde que estás en ella, y cada día que pasa, me siento más afortunado de haberte encontrado aquella noche y pase lo que pase siempre estaré agradecido con Dios y con la vida de haberte conocido. Te quiero con todo mi corazón.</p>
+        </div>
+    </div>
+</div>
+        </div>
+        <!-- Sección de Imágenes y Videos -->
+        <div class="container my-5">
+            <h2 class="text-center mb-4" style="color: #dc3545;">Nuestros momentos</h2>
+            <div class="row">
+                <!-- Imagen 1 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="Imagenes-videos/2.jpg" class="card-img-top" alt="Imagen 1">
+                        <div class="card-body">
+                            <p class="card-text">Tan bonita como siempre</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Imagen 2 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="Imagenes-videos/3.jpg" class="card-img-top" alt="Imagen 2">
+                        <div class="card-body">
+                            <p class="card-text">Que bella mi vida.</p>
+                        </div>
+                    </div>
+                </div>
+                                <!-- Imagen 2 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="Imagenes-videos/4.jpg" class="card-img-top" alt="Imagen 2">
+                            <div class="card-body">
+                                <p class="card-text">La más hermosa.</p>
+                            </div>
+                    </div>
+                </div>
+                <!-- Imagen 2 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="Imagenes-videos/6.jpg" class="card-img-top" alt="Imagen 2">
+                        <div class="card-body">
+                            <p class="card-text">Tan espectacular.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Imagen 2 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="Imagenes-videos/7.jpg" class="card-img-top" alt="Imagen 2">
+                        <div class="card-body">
+                            <p class="card-text">Extraordinaria.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Imagen 2 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="Imagenes-videos/8.jpg" class="card-img-top" alt="Imagen 2">
+                        <div class="card-body">
+                            <p class="card-text">La niña bonita.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Imagen 2 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="Imagenes-videos/9.jpg" class="card-img-top" alt="Imagen 2">
+                        <div class="card-body">
+                            <p class="card-text">Mi corazón mi amor.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Imagen 2 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="Imagenes-videos/10.jpg" class="card-img-top" alt="Imagen 2">
+                        <div class="card-body">
+                            <p class="card-text">Tu y Yo siempre bonitos.</p>
+                        </div>
+                    </div>
+                </div>   
+                <!-- Imagen 2 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="Imagenes-videos/11.jpg" class="card-img-top" alt="Imagen 2">
+                        <div class="card-body">
+                            <p class="card-text">jajaja mi niña.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Imagen 2 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="Imagenes-videos/14.jpg" class="card-img-top" alt="Imagen 2">
+                        <div class="card-body">
+                            <p class="card-text">Mi corazón.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Imagen 2 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="Imagenes-videos/WhatsApp Image 2024-08-23 at 22.08.05.jpeg" class="card-img-top" alt="Imagen 2">
+                        <div class="card-body">
+                            <p class="card-text">Gracias por eso mi vida.</p>
+                        </div>
+                    </div>
+                </div>                                                                   
+                <!-- Video 1 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <video controls class="w-100">
+                                <source src="Imagenes-videos/1.mp4" type="video/mp4">
+                                Tu navegador no soporta el elemento de video.
+                            </video>
+                            <p class="card-text">Dormidita mi amorcito</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Video 1 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <video controls class="w-100">
+                                <source src="Imagenes-videos/5.mp4" type="video/mp4">
+                                Tu navegador no soporta el elemento de video.
+                            </video>
+                            <p class="card-text">jaja comiendo patas amor</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Video 1 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <video controls class="w-100">
+                                <source src="Imagenes-videos/12.mp4" type="video/mp4">
+                                Tu navegador no soporta el elemento de video.
+                            </video>
+                            <p class="card-text">Besito mi amor</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Video 1 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <video controls class="w-100">
+                                <source src="Imagenes-videos/13.mp4" type="video/mp4">
+                                Tu navegador no soporta el elemento de video.
+                            </video>
+                            <p class="card-text">Tan linda mi amor, descansando</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Video 1 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <video controls class="w-100">
+                                <source src="Imagenes-videos/15.mp4" type="video/mp4">
+                                Tu navegador no soporta el elemento de video.
+                            </video>
+                            <p class="card-text">Bella amor</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Video 1 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <video controls class="w-100">
+                                <source src="Imagenes-videos/16.mp4" type="video/mp4">
+                                Tu navegador no soporta el elemento de video.
+                            </video>
+                            <p class="card-text">Mi niña viajando</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer class="footer">
+        <p>Con todo mi amor, <br> Jimson Andino</p>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="javascript/script.js"></script>
+    <script>
+        document.getElementById('play-music').addEventListener('click', function() {
+            var audio = document.getElementById('background-music');
+            audio.play().catch(function(error) {
+                console.log('Reproducción automática bloqueada por el navegador: ' + error);
+            });
+        });
+    </script>
+</body>
+</html>

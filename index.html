@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cómo me enamoré de ti</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hearts">
+            <div class="heart" style="left: 10%; animation-duration: 10s;"></div>
+            <div class="heart" style="left: 20%; animation-duration: 12s;"></div>
+            <div class="heart" style="left: 30%; animation-duration: 8s;"></div>
+            <div class="heart" style="left: 40%; animation-duration: 11s;"></div>
+            <div class="heart" style="left: 50%; animation-duration: 9s;"></div>
+            <div class="heart" style="left: 60%; animation-duration: 13s;"></div>
+            <div class="heart" style="left: 70%; animation-duration: 10s;"></div>
+            <div class="heart" style="left: 80%; animation-duration: 14s;"></div>
+            <div class="heart" style="left: 90%; animation-duration: 12s;"></div>
+        </div>
+        <div class="container text-center position-relative">
+            <h1>Cómo me enamoré de ti</h1>
+            <a href="contenido.html" class="btn btn-light btn-lg mt-4">Presiona aquí</a>
+            <!-- Reproductor de música -->
+            <audio id="background-music" controls style="display: none;">
+                <source src="musica/Jaze - Pinta Noma - [letra] Video lyrics.mp3" type="audio/mpeg">
+                Tu navegador no soporta el elemento de audio.
+            </audio>
+            <!-- Botón para reproducir música -->
+            <button id="play-music" class="btn btn-light btn-lg mt-4">Escuchar música</button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>Con todo mi amor, <br> Jimson Andino</p>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Script para manejar la reproducción de música -->
+    <script>
+        document.getElementById('play-music').addEventListener('click', function() {
+            var audio = document.getElementById('background-music');
+            audio.play().catch(function(error) {
+                console.log('Reproducción automática bloqueada por el navegador: ' + error);
+            });
+        });
+    </script>
+</body>
+</html>
